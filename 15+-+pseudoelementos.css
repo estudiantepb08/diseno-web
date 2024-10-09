@@ -1,0 +1,10 @@
+p{
+    position: relative;
+}
+
+p:after{
+    content: "Este es un saludo: ";
+    top: 50px;
+    position: relative;
+    left: -80px;
+}

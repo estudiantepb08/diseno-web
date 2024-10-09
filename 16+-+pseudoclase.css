@@ -1,0 +1,55 @@
+/*
+link
+visited
+hover
+active
+focus
+*/
+
+a#link1{
+
+}
+a#link2:link{
+	color: green;	
+}
+a#link1:visited{
+	color: red;	
+	font-size: 20px;
+	background: green;
+	text-decoration: none;
+}
+
+p:hover{
+	color: green;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+span:active{
+	color: green;
+}
+
+input:focus{
+	border-radius: 5px;
+	background: #FFD6D6;
+}
+/*
+avanzadas
+
+    :nth-child(N)
+    :nth-last-child(N)
+    :nth-of-type(N)
+    :nth-last-of-type(N)
+    :first-of-type
+    :last-of-type
+    :only-of-type
+    :empty
+    :not(S)
+    :last-child
+    :only-child
+    :root
+    :enable
+    :disable
+    :checked
+
+*/

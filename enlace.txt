@@ -1,0 +1,24 @@
+https://www.udemy.com/course/fundamentos-de-la-programacion/?couponCode=OF83024F
+
+herramienta para comprimir y descomprimir css y html
+https://herramientas-online.com/comprimir-descomprimir-css.html
+
+############# ETIQUETAS NUEVAS COMPARATIVA ###################
+https://gyazo.com/1d63ab69f436d70940fffe9da53a0e34
+
+############ ETIQUETAS OBSOLECTAS #######################
+https://gyazo.com/e56e5c5696459d1cc2cff0694e61312f
+
+############# VALIDAR LA PAGINA CON LA W3C ###############
+https://validator.w3.org/#validate_by_uri
+
+https://anayamultimedia.es/libro/s/s-n-n-S/index.php?error=404
+
+############# NORMALIZAR CSS #################
+https://necolas.github.io/normalize.css/
+
+############# COMPACTIBILIDAD CON NAVEGADORES ###############
+https://modernizr.com/
+
+############## LOS PREFIJOS NAVEGADORES ######################
+https://caniuse.com/
