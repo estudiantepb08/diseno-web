@@ -1,17 +1,60 @@
 body{
     font-family: 'Arial';
-    background: #6d0a43;
+   /* background: #6d0a43;*/
 }
 
 /* DISEÑO PARA EL MENU*/
-nav{}
+nav{
+    background: white;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: right; /*mueve el texto a una posicion*/
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none; /*quita los estilos de la lista desordenada*/
+}
+nav ul li{
+    display:inline-block; /*colo los elementos de la lista en linea*/
+    margin: 7px -2px;
+}
+nav ul li a{
+    text-decoration: none; /*quitamos las decoraciones de los enlaces*/
+    color:black;
+    font-weight: bolder;
+   /* border: 1px solid red;*/
+    padding: 5px 10px;
+}
+/*Vamos a resaltar cada elemento de la lista con un color diferente para eso
+* utilizamos una seudoclase como se ve en el ejemplo.
+*/
+nav ul li:nth-of-type(1) a:focus{
+    border-bottom: 3px solid #40731e;
+}
+nav ul li:nth-of-type(2) a:focus{
+    border-bottom: 3px solid #1e5173;
+}
+nav ul li:nth-of-type(3) a:focus{
+    border-bottom: 3px solid #73511e;
+}
 /***********************************************************/
 
+section{
+    position: absolute;
+    top: 5%;
+}
+article{
+    display: inline-block;
+}
 .margen{
     border: 2px solid black;
     position: relative;
-    width: 20%;
-    margin: 10%;
+   /* width: 20%;   */
+    margin: 10px 10px;
+    padding: 0px 5px;
 }
 .c-hover:hover{
     background-color: aqua;

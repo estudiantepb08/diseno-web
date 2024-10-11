@@ -1,0 +1,117 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  /*  background: red; */
+}
+nav{
+    background: white;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: right;    
+}
+nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li{    
+    display: inline-block; 
+    margin: 7px -2px;   
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bolder;    
+}
+nav ul li:nth-of-type(1) a:focus{
+    border-bottom: 3px solid blue;
+}
+nav ul li:nth-of-type(2) a:focus{
+    border-bottom: 3px solid gray;
+}
+nav ul li:nth-of-type(3) a:focus{
+    border-bottom: 3px solid rebeccapurple;
+}
+
+/****** SECTION DE LOS KEY FRAME *********************/
+section{  
+    background-color: antiquewhite;   
+}
+article{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+  /*  background-color: red;*/
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #a8cf45;
+    margin: 15px 2px;
+    padding: 5px 40px;
+    text-align: center;
+    font-weight: bolder;    
+    width: 80px;
+    vertical-align: middle;    
+}
+p{
+    padding-top: 15px;
+}
+
+/*
+Las propiedades de los keyframe para las animaciones son
+animation-name: 
+indica el nombre que tendra el keyframe que se añadira a continuacion
+animation-duration:
+tiempo total de la animacion
+animation-iteration-count:
+veces que se repetira. Para que sea en un bucle pndremos el valor "infinite"
+animation-delay:
+retardo con el que comenzara a aplicarse la reproduccion de la animacion
+*/
+.caja:hover{
+    -moz-animation: 5s cambia_color 1;
+}
+@-moz-keyframes cambia_color{
+    0%,70%{/*para repectir la animacion se coloca el porcentaje las veces necesario y lo hace de nuevo al final*/
+        background: rebeccapurple;
+    }
+    50%{
+        background: yellow;
+        height: 100px;
+    }
+}
+.caja2:hover{
+    -moz-animation: 5s change_color 1;
+}
+@-moz-keyframes change_color{
+    from{
+        background: green;
+    }
+    to{
+        background: red;
+    }
+}
+.flash:hover{
+    -moz-animation: 0.7s flash 1;
+}
+@-moz-keyframes flash{
+    0%, 50%, 100%{
+        opacity: 1;
+    }
+    25%, 75%{
+        opacity: 0;
+    }    
+}
+.click:hover{
+    -moz-animation: 0.7s click 1;
+}
+@-moz-keyframes click{
+    25%,75%{
+        -webkit-transform:scale(0.8);
+    }
+    50%{
+        -webkit-transform:scale(1.1);
+    }    
+}
