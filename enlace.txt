@@ -22,3 +22,27 @@ https://modernizr.com/
 
 ############## LOS PREFIJOS NAVEGADORES ######################
 https://caniuse.com/
+
+################ VALIDACION SITIO WEB ########################
+https://www.woorank.com/
+
+################ TIEMPO DE CARGA DE LA PAGINA WEB ################
+https://frontenddogma.com/tools/check/
+https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect
+https://loadimpact.com/
+https://tools.pingdom.com/
+https://herramientas-online.com/comprimir-descomprimir-css.html
+
+################# COLORES PARA SITIOS WEB #######################
+https://color.adobe.com/es/create/color-wheel/
+
+################ PAGINAS ICONOS ###################
+https://icomoon.io/
+
+################ MOKUP DE SITIOS WEB ################
+https://ninjamock.com/
+
+################ GESTIONAR PROYECTO #####################
+https://clickup.com/
+https://www.udemy.com/professional-training/web-developer/?utm_source=email-pro&utm_campaign=240601_Student-MX_EM-Lifecycle_PP-Upsell_Web-Dev-V2&utm_medium=Email&utm_term=CB_MASTER_TP_MX_2024_LEFT_ICON_RIGHT_COPY_STATIC_2X10_560&utm_content=udemy_braze.4f536ef0711185ae1fa82e21f0ded4d0
+

@@ -6,7 +6,7 @@ div{
     margin: 50px;
 }
 .imagen{
-    background: url("firma.gif"),
+    background-image: url("firma.gif"),
                 url("imagen.jpg");
 
    

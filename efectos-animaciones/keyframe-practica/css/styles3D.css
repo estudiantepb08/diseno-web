@@ -1,0 +1,80 @@
+article{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+  
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #a8cf45;
+    margin: 15px 2px;
+    padding: 5px 40px;
+    text-align: center;
+    font-weight: bolder;    
+    width: 80px;
+    vertical-align: middle;    
+}
+p{
+    padding-top: 15px;
+}
+
+/************** ANIMACION 3D ******************/
+.giroX{
+    -webkit-animation: 1s giroX 1;  
+    -webkit-backface-visibility: visible;  
+}
+@-webkit-keyframes giroX{    
+    0%{
+        opacity: 0.5;
+        -webkit-transform: perspective(200px) rotateX(90deg);
+    }
+    40%{
+        -webkit-transform: perspective(200px) rotateX(-20deg);
+    }
+    70%{
+        -webkit-transform: perspective(200px) rotateX(20deg);
+    }
+}
+.giroY{
+    -webkit-animation: 1s giroY 1;
+    -webkit-backface-visibility: visible;
+}
+@-webkit-keyframes giroY{
+    0%{
+        opacity: 0;
+        -webkit-transform: perspective(200px) rotateY(90deg);
+    }
+    40%{
+        -webkit-transform: perspective(200px) rotateY(-20px);
+    }
+    70%{
+        -webkit-transform: perspective(200px) rotateY(20px);
+    }
+}
+.giroOutY{
+    -webkit-animation: 1s giroOutY 1;
+}
+@-webkit-keyframes giroOutY{
+    100%{
+        opacity: 0.3;
+        -webkit-transform: perspective(80px) rotateY(90deg);
+    }
+}
+.giro3D{
+    -webkit-animation: 1s giro3D 1;
+    -webkit-backface-visibility: visible;
+}
+@-webkit-keyframes giro3D{
+    40%{
+        -webkit-transform: perspective(100px) rotateY(170deg) translateZ(120px);
+    }
+    50%{
+        -webkit-transform: perspective(100px) rotateY(190deg) translateZ(120px);
+    }
+    80%{
+        -webkit-transform: perspective(100px) rotateY(360deg) translateZ(120px);
+    }
+    80%{
+        -webkit-transform: perspective(100px) rotateY(360deg);
+    }
+}
