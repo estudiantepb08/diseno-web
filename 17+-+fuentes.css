@@ -72,3 +72,83 @@ line-height:
 
 
 */
+
+/** REVISAR PORQUE NO FUNCIONAN*/
+
+@font-face{
+    font-family: "irlandesa";
+    src: url("/font/irlandesa.eot");
+    src: local('?'),
+        url("/font/irlandesa.woff") format("woff"),
+        url("/font/irlandesa.ttf") format("truetype");
+}
+@font-face{
+    font-family: "ubuntu";
+    font-weight: 500;
+    font-style: normal;
+    src: url("/font/Ubuntu-Medium.ttf");
+    src: local('?'),         
+         url("/font/Ubuntu-Regular.ttf")format("truetype"),
+         url("/font/Ubuntu-MediumItalic.ttf")format("truetype"),
+         url("/font/Ubuntu-LightItalic.ttf")format("truetype"),
+         url("/font/Ubuntu-Light.ttf")format("truetype"),
+         url("/font/Ubuntu-Italic.ttf")format("truetype"),
+         url("/font/Ubuntu-BoldItalic.ttf")format("truetype"),
+         url("/font/Ubuntu-Bold.ttf")format("truetype");
+}
+@font-face {
+    font-family: 'FAMILY_NAME';
+    font-stretch: PERCENTAGE_RANGE_LOW_TO_HIGH;  /*Note that font-stretch is a % of normal width */
+    font-style: NORMAL_OR_ITALIC;  /*See note below */
+    font-weight: NUMERIC_RANGE_LOW_TO_HIGH;
+    src: url(FONT_FILE_NAME.woff2) format('woff2');
+  }
+
+  .ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
