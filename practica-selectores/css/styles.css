@@ -30,3 +30,8 @@ a[class~="externo"] { color: blue; }
 /* Selecciona todos los elementos de la página cuyo atributo
    "lang" empiece por "es", es decir, "es", "es-ES", "es-AR", etc. */
 *[lang|="es"] { color : red }
+
+
+/*Agrupar las reglas para que no pese mucho el archivo CSS y la pagina cargue rapido*/
+h1 { color: red; font-size: 2em; font-family: Verdana; }
+h1 {color:red;font-size:2em;font-family:Verdana;}
