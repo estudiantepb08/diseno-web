@@ -1,0 +1,35 @@
+body{background:#000;color:#fff}
+body {padding: 1em 2em 3em 4em} /* Superior = 1em, derecho = 2em, inferior = 3em, izquierdo = 4em */
+.destacado {margin-left: 2em;}
+div img {
+border:2px solid green;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  margin-left: 1em;
+  margin-right: .5em;
+width:100px;
+height:100px;
+padding: 1em;
+}
+.bordes{
+background:#015;
+boder-color:#5a7;
+  border-top-width: 10px;
+  border-right-width: 1em;
+  border-bottom-width: thick;
+  border-left-width: thin;
+width:100px;
+height:100px;
+padding: 1em;
+
+}
+div {
+  border-top-style: dashed;
+  border-right-style: double;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+border-top-color: #CC0000;
+  border-right-color: blue;
+  border-bottom-color: #00FF00;
+  border-left-color: #CCC;
+}
