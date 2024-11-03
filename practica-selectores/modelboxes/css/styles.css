@@ -33,3 +33,37 @@ border-top-color: #CC0000;
   border-bottom-color: #00FF00;
   border-left-color: #CCC;
 }
+div.prueba{
+background:#204;
+  width: 300px;
+  padding-left:  50px;
+  padding-right: 50px;
+  margin-left:   30px;
+  margin-right:  30px;
+  border: 10px solid black;
+}
+#caja1 {
+  background-image: url("images/help.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+#caja2 {
+  background-image: url("images/help.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+#caja3 {
+  background-image: url("images/help.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* Color e imagen de fondo de la página mediante una propiedad shorthand */
+body { background: #222d2d url(./graphics/colorstrip.gif) repeat-x 0 0; }
+
+/* La propiedad shorthand anterior es equivalente a las siguientes propiedades */
+body {
+  background-color: #222d2d;
+  background-image: url("./graphics/colorstrip.gif");
+  background-repeat: repeat-x;
+  background-position: 0 0;
+}
