@@ -1,0 +1,19 @@
+/*  Layout centrado horizontal del contenido de la pagina web */
+
+/* section.container{width:70%;height:250px;margin:auto;background-color:gray} */
+
+/*Layout centrado vertical del contenido de la pagina web*/
+ section.container{
+
+background-color:gray;
+  width: 500px;
+  height: 500px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin-top: -250px;   /* height/2 = 500px / 2 */
+  margin-left: -250px;  /* width/2 = 500px / 2 */  }
+
+/*===========================================================*/

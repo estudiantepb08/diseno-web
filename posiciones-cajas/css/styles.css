@@ -43,7 +43,7 @@ div.tridemen #caja3 { z-index: 25;  top: 2em; left: 2em;}
 section div{width:45%;position:relative;top:0px;left:70px;display:inline-block;border:1px solid orange;margin:5px;}
 
 section div.linea{background:yellow;color:#000;/*overflow:hidden;*/}
-section div.bloques{background:blue;top:-0px;left:70px;color:#fff;/*overflow:hidden;*/}
+section div.bloques{background:blue;top:-0px;left:70px;color:#fff;/*overflow:hidden;*/ line-height:1.5em}
 section div.statico{background:green;color:#fff;}
 section div.relativo{background:gray;top:-0px;left:70px;color:#000;}
 section div.absoluto{background:red; color:#000;}

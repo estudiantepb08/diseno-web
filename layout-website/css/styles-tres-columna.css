@@ -1,0 +1,33 @@
+
+/*Layout a dos columnas dinamico se ajusta a la ventana del dispositivo del contenido de la pagina web*/
+
+#contenedor {
+}
+header/*#cabecera*/ {
+background:blue;
+}
+#menu {
+background:green;
+  float: left;
+  width: 15%;
+}
+#contenido {
+background:#ff0;
+  float: left;
+  width: 85%;
+}
+#contenido #principal {
+background:gray;
+  float: left;
+  width: 80%;
+}
+#contenido #secundario {
+background:purple;
+  float: left;
+  width: 20%;
+}
+
+#pie {
+background:red;
+  clear: both;
+}
