@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manejo de cookies</title>
+	<script>
+		window.onload = function(){
+			if (localStorage.politica>0) {
+				document.getElementById("galletas1").style.botton = "-50px";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="galletas" id="galletas1">
+		Este sitio web utiliza cookies, puedes consultar nuestra <a href="#">política de cookies</a>. Si continúas navegando estás aceptándola <button id="aceptar">Acceptar</button>
+		<div class="galletas2" onmouseover="document.getElementById('galletas1').style.bottom = '0px';">Política de cookies
+		</div>
+	</div>
+</body>
+</html>
