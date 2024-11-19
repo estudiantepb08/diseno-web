@@ -3,6 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		div {
+  width: 160px;
+  height: 80px;
+  padding: 20px;
+  border: 8px solid red;
+  background: yellow;
+}
+
+.content-box {
+  box-sizing: content-box;
+  /* Ancho  total: 160px + (2 * 20px) + (2 * 8px) = 216px
+     Altura total: 80px + (2 * 20px) + (2 * 8px) = 136px
+     Ancho de la caja de contenido: 160px
+     Altura de la caja de contenido: 80px */
+}
+
+.border-box {
+  box-sizing: border-box;
+  /* Ancho total: 160px
+     Altura total: 80px
+     Ancho de la caja de contenido: 160px - (2 * 20px) - (2 * 8px) = 104px
+     Altura de la caja de contenido: 80px - (2 * 20px) - (2 * 8px) = 24px */
+}
+
+	</style>
 </head>
 <body>
 	<header>
@@ -13,5 +39,15 @@
 		banner
 		-->
 	</header>
+	
+	<div class="content-box">
+		<h2>Contenido de la caja</h2>
+		<p>Lorem ipsu</p>
+	</div>
+        <br />
+        <div class="border-box">
+			<h2>Borde de la caja</h2>
+			<p>Lorem ipsu</p>
+	</div>
 </body>
 </html>

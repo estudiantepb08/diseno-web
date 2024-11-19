@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Responsive</title>
+    <style>
+        /* Estilo básico del menú */
+        #menu {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+        }
+
+        #menu li {
+            padding: 10px;
+            color: white;
+            background-color: #444;
+            border-bottom: 1px solid #555;
+        }
+
+        #menu li:hover {
+            background-color: #555;
+        }
+
+        /* Botón para mostrar/ocultar el menú */
+        #menuButton {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Estilo para hacer que el menú se vea mejor en móviles */
+        @media screen and (max-width: 768px) {
+            #menu {
+                display: none;
+                width: 100%;
+            }
+
+            #menuButton {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botón para abrir/cerrar el menú -->
+    <button id="menuButton" onclick="toggleMenu()">Menú</button>
+
+    <!-- Menú de navegación -->
+    <ul id="menu">
+        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Nosotros</li>
+        <li>Contacto</li>
+    </ul>
+
+    <script>
+        // Función para alternar el menú
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

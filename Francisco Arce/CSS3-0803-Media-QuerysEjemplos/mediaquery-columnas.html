@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Media Query Columnas</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.columna{
+			float: left;
+			width: 25%;
+			padding: 20px;
+		}
+		.columna:after{
+			content: "";
+			display: table;
+			float: clear;
+		}
+		@media screen and (max-width: 992px){
+			.columna{
+				width: 50%;
+			}
+		}
+		@media screen and (max-width: 600px){
+			.columna{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h2>Columnas responsivas</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="columna" style="background-color: #aaa;">
+		<h2>Columna 1</h2>
+		<p>Texto columna 1</p>
+	</div>
+	<div class="columna" style="background-color: #bbb;">
+		<h2>Columna 2</h2>
+		<p>Texto columna 2</p>
+	</div>
+	<div class="columna" style="background-color: #ccc;">
+		<h2>Columna 3</h2>
+		<p>Texto columna 3</p>
+	</div>
+	<div class="columna" style="background-color: #ddd;">
+		<h2>Columna 4</h2>
+		<p>Texto columna 4</p>
+	</div>
+
+</body>
+</html>

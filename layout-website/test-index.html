@@ -2,35 +2,46 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Test-Layout</title>
         <style type="text/css" media="screen">
             @import url("css/test-styles.css");
         </style>
+        <script src="js/jquery.min.js"></script>
         <script src="js/slider.js"></script>
+        <script src="js/menu.js"></script>
     </head>
-    <body>
-      <!--  <section class="content"></section> -->
+    <body>      
         <header>
             <div class="logo">
                 <a href="test-index.html"><figure><img src="img/Logo.svg"/></figure></a>
                 <div class="info_header">
                     <p>6018943172</p>
                 </div>
+                <div id="show_menu" onclick="showMenu()"></div>
+                <div id="close_menu" onclick="showMenu()"></div>
             </div>
-            <nav>
-                <div id="show_menu"></div>
-                <div id="card_menu">
-                    <div id="close_menu"></div>
-                <ul>
+            <nav class="menu" id="card_menu">
+                <ul> 
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#">Proyectos</a></li>
                     <li><a href="#">Quienes Somos</a></li>
                     <li><a href="#">Service</a></li>
                     <li><a href="#">Cotizar</a></li>
                 </ul>
-                    </div>
+                    
             </nav>
-              <!--Section slider-->
+        <!--     <section class="banner-1">
+        </section>
+            
+		logotipo
+		nombre -> h1
+		nav
+		banner
+		-->
+            
+        </header>
+                      <!--Section slider-->
     <section id="slider">
         <ul>
             <li><img src="img/slider/banner1.jpg" alt="primera imagen"></li>
@@ -41,23 +52,22 @@
             <li slider-item="1"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
             <li slider-item="2"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
             <li slider-item="3"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
-            <li slider-item="4"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
+           <!-- <li slider-item="4"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
             <li slider-item="5"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
-            <li slider-item="6"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li>
+            <li slider-item="6"><span><i class="fa fa-circle-thin" aria-hidden="true"></i></span></li> -->
         </ol>
         <section id="left"><i class="fa fa-chevron-left" aria-hidden="true"></i></section>
         <section id="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></section>
     </section>
+    <section class="home">
+        <div class="boxe_one">
+            <h1>Desarrollamos ideas, creamos realidades</h1>
             
-            <!-- 
-		logotipo
-		nombre -> h1
-		nav
-		banner
-		-->
-            
-        </header>
-        
-        <section id="home"></section>
+        </div>
+        <div class="boxe_two"></div>
+        <div class="boxe_three"></div>
+        </section>
+
+
     </body>
 </html>

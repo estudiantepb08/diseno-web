@@ -1,58 +1,100 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: content-box;}
 body,a{color: red;font-size: 18px; font-family: Arial, Helvetica, sans-serif;text-decoration: none;}
 
-body .content{margin: 0 15px;}
-
-header{background-color: black;width: 100%; height: 120px; position: relative;}
-header .logo{background-color: yellow;width: 100%;height: 70px;}
+header{background-color: #090024; width: 100%; /*height: 120px;*/ position: relative;}
+header .logo{/*background-color: #090024;*/ width: 100%; height: 70px;}
 header .logo figure{/*background-color: blue;*/ width: 100px;height: 70px;margin: 0; padding: 0;}
 header .logo figure:hover{cursor: pointer;}
 header .logo figure img{width: 80%; padding: 2px 17px;}
 header .logo .info_header{display: none;}
-header nav #show_menu{/*background-color: aqua;*/ width: 50px; height: 50px; position: relative; top: -60px; right: -300px;}
+header .logo #show_menu{/*background-color: aqua;*/color:#eb7305; width: 50px; height: 50px; position: absolute; top: 10px; right: 16px;}
+header .logo #show_menu img{width: 100%;}
+header .logo #show_menu::before{content: '|||'; transform: rotate(90deg);font-size: 20px;font-weight: bolder; position: absolute; top: 14px; right: 14px;}
+header .logo #show_menu:hover{cursor: pointer; border-radius: 3px; border: 1px dotted #eb7305;}
+header .logo #close_menu{color:#eb7305; display: none;/*background-color: aquamarine;*/ width: 50px; height: 50px; position: absolute; top: 10px; right: 16px;}
+header .logo #close_menu::before{content: 'X'; font-size: 20px; font-weight: bolder; position: relative; top: 14px; right: -18px;}
+header .logo #close_menu:hover{cursor: pointer; border-radius: 3px; border: 1px dotted #eb7305;}
+header nav {background-color: white; display: none; width: 100%;}
+header nav ul{/*background-color: blue;*/ height: 205px; list-style: none;}
+header nav ul li{/*background-color: red;*/ cursor: pointer; padding: 10px 18px;}
+header nav ul li a{font-size: 16px; color: #090024;}
+header nav ul li a:hover{color: #eb7305;} 
+ /*
+    Estilos del slider
+    */
+#slider { position: relative; /*top: 10px;*/ margin: auto; width: 100%; overflow: hidden; }
+#slider ul { position: relative; margin: auto; height: auto; width: 600%; }
+#slider ul li { float: left; width: 16%; }
+#slider ul li img { width: 100%; }
+#slider #indicator { position: relative; width: 100%; margin: auto; /*font-size: 18px;*/ text-align: center; margin-top: 70px; }
+#slider #indicator li { display: inline-block; margin: 0 5px; cursor: pointer; opacity: .5; color: #34b446; text-shadow: 0 0 5px #333; clear: both; }
+#slider #indicator li:first-child { opacity: 1; }
+#slider #left { position: absolute; top: 40%; left: 2%; font-size: 2em; color: #fbeb23; cursor: pointer; }
+#slider #right { position: absolute; top: 40%; right: 2%; font-size: 2em; color: #fbeb23; cursor: pointer; }
+
+
+body .home{display: inline-block; width: 100%; background-color: aquamarine;}
+body .home .boxe_one{width: 90%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305; margin: 5px 16px 5px 16px;}
+body .home .boxe_two{width: 90%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305; margin: 5px 16px 5px 16px;}
+body .home .boxe_three{width: 90%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305;margin: 5px 16px 5px 16px;}
+
+
+
+@media screen and (min-width: 480px) and (orientation: landscape){
+/*
+body .content{margin: 0 15px;}
+
+header{background-color: black;width: 100%; /*height: 120px; position: relative;}
+header .logo{background-color: yellow;width: 100%;height: 70px;}
+header .logo figure{/*background-color: blue; width: 100px;height: 70px;margin: 0; padding: 0;}
+header .logo figure:hover{cursor: pointer;}
+header .logo figure img{width: 80%; padding: 2px 17px;}
+header .logo .info_header{display: none;}
+header nav #show_menu{/*background-color: aqua; width: 50px; height: 50px; position: relative; top: -60px; right: -300px;}
 header nav #show_menu::before{content: '|||'; transform: rotate(90deg);font-size: 20px;font-weight: bolder; position: absolute; top: 14px; right: 14px;}
 header nav #show_menu:hover{cursor: pointer; border-radius: 3px; border: 1px dotted #eb7305;}
-header nav #card_menu{background-color: gray; position: absolute; top: 70px; width: 100%; height: 205px;}
-header nav #card_menu #close_menu{/*background-color: aquamarine;*/ width: 50px; height: 50px; position: relative; top: -60px; right: -300px;}
+header nav #card_menu{background-color: gray; display: none; position: absolute; top: 70px; width: 100%; height: 205px;}
+header nav #card_menu #close_menu{/*background-color: aquamarine; width: 50px; height: 50px; position: relative; top: -60px; right: -300px;}
 header nav #card_menu #close_menu::before{content: 'X'; font-size: 20px; font-weight: bolder; position: relative; top: 14px; right: -18px;}
 header nav #card_menu #close_menu:hover{cursor: pointer; border-radius: 3px; border: 1px dotted #eb7305;}
-header nav ul{background-color: blue; /*margin-left: 15px;*/ height: 205px; list-style: none; position: relative; top: -50px; /*left: 15px;*/}
-header nav ul li{background-color: red; cursor: pointer;/*position: relative; top: 2px; left: 18px;*/ padding: 10px 18px;}
+header nav ul{background-color: blue; /*margin-left: 15px; height: 205px; list-style: none; position: relative; top: -50px; /*left: 15px;}
+header nav ul li{background-color: red; cursor: pointer;/*position: relative; top: 2px; left: 18px; padding: 10px 18px;}
 header nav ul li a{font-size: 16px; color: #090024;}
 header nav ul li a:hover{color: #eb7305;}
 
  /*
     Estilos del slider
     */
-    #slider {
+    /*
+header #slider {
         position: relative;
         top: 155px;
         margin: auto;
         width: 100%;
         overflow: hidden;
     }
-    #slider ul {
+header #slider ul {
         position: relative;
         margin: auto;
         height: auto;
         width: 600%;
     }
-    #slider ul li {
+header #slider ul li {
         float: left;
         width: 16%;
     }
-    #slider ul li img {
+header #slider ul li img {
         width: 100%;
     }
-    #indicator {
+header #slider #indicator {
         position: relative;
         width: 100%;
         margin: auto;
-        /*font-size: 18px;*/
+        /*font-size: 18px;
         text-align: center;
         margin-top: 70px;
     }
-    #indicator li {
+header #slider #indicator li {
         display: inline-block;
         margin: 0 5px;
         cursor: pointer;
@@ -61,10 +103,10 @@ header nav ul li a:hover{color: #eb7305;}
         text-shadow: 0 0 5px #333;
         clear: both;
     }
-    #indicator li:first-child {
+header #slider #indicator li:first-child {
         opacity: 1;
     }
-    #left {
+header #slider #left {
         position: absolute;
         top: 40%;
         left: 2%;
@@ -72,7 +114,7 @@ header nav ul li a:hover{color: #eb7305;}
         color: #fbeb23;
         cursor: pointer;
     }
-    #right {
+header #slider #right {
         position: absolute;
         top: 40%;
         right: 2%;
@@ -81,19 +123,11 @@ header nav ul li a:hover{color: #eb7305;}
         cursor: pointer;
     }
 
-#home{width: 100%; height: 150px; background-color: aquamarine;position: relative; top: 500px;}
+*/
+}  
 
-
-@media screen and (min-width: 480px){
-    body{
-        background: #34A647;
-    }
-
-}
-
-
-@media screen and (min-width: 767px){
-
+@media screen and (min-width: 767px) and (orientation: landscape){    
+    
    /* header{background-color: black;width: 100%; height: 120px;}
 header .logo{background-color: yellow;width: 100%;height: 70px;}
 header nav{background-color: red; width: 60%; height: 50px; float: right;}
@@ -101,9 +135,14 @@ header nav ul{background-color: aqua; list-style: none;position: relative; top: 
 header nav ul li{background-color: gray; display: inline-block; margin-left: 15px;position: relative; right: -50px}
 header .banner{background-color: green; width: 100%; height: 660px;position: relative; top: 50px;}
 */
+    
+    body .home{display: inline-block; width: 100%;/* height: 150px;*/ background-color: aquamarine; /*position: relative; top: 10px;*/}
+    body .home .boxe_one{width: 25%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305;}
+body .home .boxe_two{width: 25%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305;}
+body .home .boxe_three{width: 25%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305;}
 }
 
-@media screen and (min-width: 950px){
+@media screen and (min-width: 950px) and (orientation: landscape){
     body{
         background: #A76A9E;
     }

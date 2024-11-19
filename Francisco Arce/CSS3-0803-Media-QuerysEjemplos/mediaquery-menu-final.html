@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.menu{
+			overflow: hidden;
+			background-color: #333;
+		}
+		.menu a{
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.menu a:hover{
+			background-color: #ddd;
+			color: black;
+		}
+		@media screen and (max-width: 600px){
+			.menu a{
+				float: none;
+				width: 100%;
+				background: orange;
+				padding-top: 20px;
+				padding-buttom: 20px;
+			}
+			.menu a:hover{
+				background-color: red;
+				color: white;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h2>Menu responsivo</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="menu">
+		<a href="#">Opción 1</a>
+		<a href="#">Opción 2</a>
+		<a href="#">Opción 3</a>
+		<a href="#">Opción 4</a>
+	</div>
+
+</body>
+</html>
