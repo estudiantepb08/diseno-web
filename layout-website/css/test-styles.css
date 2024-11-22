@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0; box-sizing: content-box;}
-body,a{color: red;font-size: 18px; font-family: Arial, Helvetica, sans-serif;text-decoration: none;}
+body,a{color: red;/*white;*//*#090024;*/font-size: 18px; font-family: Arial, Helvetica, sans-serif;text-decoration: none;}
 
 .active {background-color: #eb7305; color: white; font-weight: bold;}
 
@@ -24,10 +24,12 @@ header nav ul li a:hover{color: #eb7305;}
  /*
     Estilos del slider
     */
-#slider { position: relative; /*top: 10px;*/ margin: auto; width: 100%; overflow: hidden; }
+#slider { position: relative; /*top: 0px;*/ margin: auto; width: 100%; overflow: hidden; }
 #slider ul { position: relative; margin: auto; height: auto; width: 600%; }
-#slider ul li { float: left; width: 16%; }
-#slider ul li img { width: 100%; }
+#slider ul li { float: left; width: 16%;}
+#slider ul li figure h1 {z-index: 99999; position: absolute; top: 15px; left: 10px; width: 200px; line-height: 1.5em;}
+#slider ul li figure h2 {z-index: 99999; position: absolute; top: 20px; left: 10px; width: 200px; line-height: 1.5em;}
+#slider ul li img { width: 100%;}
 #slider #indicator { position: relative; width: 100%; margin: auto; /*font-size: 18px;*/ text-align: center; margin-top: 70px; }
 #slider #indicator li { display: inline-block; margin: 0 5px; cursor: pointer; opacity: .5; color: #34b446; text-shadow: 0 0 5px #333; clear: both; }
 #slider #indicator li:first-child { opacity: 1; }
@@ -40,7 +42,9 @@ body #btn-services:hover{background-color: #eb7305; color: white; font-weight: b
 body #btn-cotizar:hover{border: none; background-color: #eb7305; color: white; font-weight: bold; height: 30px;}
 
 body .home{/*display: inline-block;*/ width: 100%; background-color: aquamarine; top: 20px;}
-body .home .boxe_one{width: 90%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305; margin: 5px 16px 5px 16px;}
+body .home .home_container{background-color: white; border: 1px dotted #eb7305;}
+body .home .boxe_one{background-color: gray; width: 90%; border-radius: 5px;  border: 1px dotted #eb7305; margin: 5px 16px 5px 16px;}
+body .home .home_img{}
 body .home .boxe_two{width: 90%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305; margin: 5px 16px 5px 16px;}
 body .home .boxe_three{width: 90%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305;margin: 5px 16px 5px 16px;}
 
