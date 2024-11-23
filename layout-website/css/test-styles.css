@@ -41,10 +41,12 @@ body #btn-cotizar{border: 1px solid #090024; color: #090024; font-size: 1em; wid
 body #btn-services:hover{background-color: #eb7305; color: white; font-weight: bold;}
 body #btn-cotizar:hover{border: none; background-color: #eb7305; color: white; font-weight: bold; height: 30px;}
 
-body .home{/*display: inline-block;*/ width: 100%; background-color: aquamarine; top: 20px;}
-body .home .home_container{background-color: white; border: 1px dotted #eb7305;}
-body .home .boxe_one{background-color: gray; width: 90%; border-radius: 5px;  border: 1px dotted #eb7305; margin: 5px 16px 5px 16px;}
-body .home .home_img{}
+body .home{position: relative;}
+body .home .home_container{/*background-color: blue;white;*/ border: 1px dotted #eb7305; color: #333; height: 420px;}
+body .home .boxe_one{/*align-content: center; background-color: gray; */ width: 400px; /*border-radius: 5px;  border: 1px dotted #eb7305;*/ position: relative; left: 10px; /*margin: 5px 12px 5px 12px;*/ line-height: 2em; padding: 15px}
+body .home .boxe_one h4{padding-bottom: 15px; font-size: 1.2em;}
+body .home .boxe_one h2{font-weight: bold; font-size: 1.7em; /*width: 80%;*/}
+body .home .home_img{width: 50%; padding: 10px; position: relative; top: 10px; left: 20px; background-color: #090024;}
 body .home .boxe_two{width: 90%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305; margin: 5px 16px 5px 16px;}
 body .home .boxe_three{width: 90%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305;margin: 5px 16px 5px 16px;}
 
