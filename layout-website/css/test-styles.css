@@ -50,6 +50,13 @@ body .home .home_img{width: 50%; padding: 10px; position: relative; top: 10px; l
 body .home .boxe_two{width: 90%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305; margin: 5px 16px 5px 16px;}
 body .home .boxe_three{width: 90%; height: 200px; border-radius: 5px;  border: 1px dotted #eb7305;margin: 5px 16px 5px 16px;}
 
+body .services{color: #333; position: relative;}
+body .services .services_content{border: 1px dotted #eb7305; padding: 17px;}
+body .services .services_content h2{/*background-color: yellow;*/ font-weight: bold; font-size: 1.7em; padding-top: 20px; padding-bottom: 50px;}
+body .services .services_content div figure{padding-top: 18px;}
+body .services .services_content div figure img{width: 380px; height: 250px;}
+body .services .services_content div h3{padding-top: 15px; padding-bottom: 15px;}
+body .services .services_content div p{font-size: 12pt; line-height: 1.5em; padding-bottom: 10px;}
 
 
 @media screen and (min-width: 480px) and (orientation: landscape){
